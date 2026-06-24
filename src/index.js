@@ -1,6 +1,8 @@
 //require('dotenv').config({path: './env'});
 import dotenv from "dotenv";
+import { app } from "./app.js";
 import ConnectDB from "./db/DB.js";
+import cookieParser from "cookie-parser";
 
 dotenv.config({
     path:'./env'
@@ -17,7 +19,6 @@ ConnectDB()
 .catch((e) =>{
     console.log("MONGODB connection failed !!!", e);
 });
-
 
 
 /* ---------- This is the first approach --------------
