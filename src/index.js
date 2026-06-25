@@ -5,9 +5,10 @@ import ConnectDB from "./db/DB.js";
 import cookieParser from "cookie-parser";
 
 dotenv.config({
-    path:'./env'
+    path:'./.env'
 })
 
+console.log("INDEX.JS LOADED");
 
 ConnectDB()
 .then(() =>{
