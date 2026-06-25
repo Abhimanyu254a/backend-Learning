@@ -1,0 +1,5 @@
+$kind: http-request
+name: registeration
+url: "{{server}}/test"
+method: GET
+order: 1782395898346
